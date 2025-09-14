@@ -1,31 +1,39 @@
+/* Reset básico */
 body, html {
     margin: 0;
     padding: 0;
     background-image: url(img/bg2.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
 }
 
+/* Menu */
 #menu {
     width: 100%;
-    background-color: white;
     height: 150px;
     display: flex;
-    align-items: center;  
+    align-items: center;
     position: fixed;
     z-index: 1;
+    background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 #menu .logo {
-    flex: 1;                   
+    flex: 1;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 15%;
 }
 
+#menu .logo img {
+    width: 120px;
+}
+
 #menu .links {
-    flex: 1;                    
+    flex: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 5%;
     user-select: none;
 }
@@ -35,181 +43,180 @@ body, html {
     color: black;
     font-size: 20px;
     border-bottom: 2px solid transparent;
-    transition: all 0.5s;
+    transition: border-bottom 0.5s;
 }
 
-#menu .links a:hover {
-    border-bottom: 2px solid black;
-}
-
+#menu .links a:hover,
 #menu .links .home {
     border-bottom: 2px solid black;
 }
 
 #menu #socialmedias {
-    user-select: none;
-    flex: 1;                    
+    flex: 1;
     display: flex;
-    justify-content: end; 
-    margin-right: 15%;
+    justify-content: flex-end;
     gap: 5%;
-}
-
-
-#menu .logo img{
-    width: 150px;
+    margin-right: 15%;
+    user-select: none;
 }
 
 #menu #socialmedias img {
     width: 25px;
-    transition: all 0.2s;
+    transition: transform 0.2s;
 }
 
 #menu #socialmedias img:hover {
     transform: scale(1.1);
 }
 
-
+/* Seção de boas-vindas */
 #welcome {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
     padding-top: 15%;
+    padding-bottom: 25%;
 }
 
 #welcome .welcometext {
     font-size: 40px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     user-select: none;
 }
 
 #welcome .contactbutton {
-    user-select: none;
     font-size: 10px;
     color: black;
     background-color: rgb(250, 235, 215);
     height: 50px;
     width: 250px;
-    margin: auto;
+    margin: 20px auto 0 auto;
     border-radius: 10px;
-    transition: all 0.5s;
     border: 1px solid rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    user-select: none;
 }
 
 #welcome .contactbutton a {
     text-decoration: none;
     color: black;
-    
 }
 
 #welcome .contactbutton span {
-    font-size: 0px;
-    transition: all 0.3s;
+    font-size: 0;
+    transition: font-size 0.3s;
 }
 
-#welcome .contactbutton:hover span{
+#welcome .contactbutton:hover span {
     font-size: 16px;
 }
 
+/* Seções principais */
 section {
     background-color: antiquewhite;
-    margin-top: 45vh;
-    padding: 0% 7% 0% 7%;
+    padding: 0 7%;
 }
 
-#layout {
-    margin-right: 10%;
-    display: grid;
-}
 
-#layout .aboutsection {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    user-select: none;
-}
-
+/* Seções específicas */
+#layout .aboutsection,
 #layout .pricingsection {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     user-select: none;
 }
 
 #layout .portfoliosection {
-    position: absolute;
-    margin-left: 10%; 
     user-select: none;
+}
+
+#layout {
+    column-count: 2;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+#layout img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.4s;
+}
+
+
+/* Imagens de seção */
+#layout .aboutsection h1,
+#layout .pricingsection h1,
+#layout .portfoliosection h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.2s;
+    filter: brightness(1);
 }
 
 #layout .aboutsection h1 {
     background-image: url(img/aboutsection.jpg);
-    filter: brightness(1);
-    width: 600px;
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    transition: all 0.2s;
+    width: 600px;
 }
 
 #layout .pricingsection h1 {
-    background-image: url(img/aboutsection.jpg);
-    width: 600px;
+    background-image: url(img/pricesection.jpg);
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    transition: all 0.2s;
+    width: 600px;
 }
 
 #layout .portfoliosection h1 {
     background-image: url(img/portfoliosection.jpg);
     background-size: 150%;
     background-position: center;
-    width: 600px;
     height: 1300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    transition: all 0.2s;
-    
+    width: 600px;
 }
 
-
-
-#layout .aboutsection h1:hover, .pricingsection h1:hover, .portfoliosection h1:hover {
+/* Hover geral das seções */
+#layout .aboutsection h1:hover,
+#layout .pricingsection h1:hover,
+#layout .portfoliosection h1:hover {
     filter: brightness(1.3);
     transform: scale(1.02);
 }
 
-#layout .aboutsection a, .pricingsection a, .portfoliosection a {
+/* Links internos das seções */
+#layout .aboutsection a,
+#layout .pricingsection a,
+#layout .portfoliosection a {
     text-decoration: none;
     color: white;
     filter: brightness(1);
 }
 
+/* Footer */
 footer {
+    display: grid;
     place-items: center;
-    padding: 5% 0 5% 0;
+    padding: 5% 0;
+    text-align: center;
 }
 
 .socialmediasfooter {
     display: flex;
+    align-items: center;
     gap: 20px;
     user-select: none;
-    align-items: center;
 }
 
 .socialmediasfooter img {
     width: 25px;
-    transition: all 0.2s;
+    transition: transform 0.2s;
 }
 
 .socialmediasfooter img:hover {
@@ -217,3 +224,363 @@ footer {
 }
 
 
+/* Responsividade */
+@media screen and (max-width: 1800px) {
+
+    #welcome {
+        padding-bottom: 20%;
+    }
+
+    #layout {
+        column-count: 2;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 500px;
+        width: 500px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 500px;
+        width: 500px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 150%;
+        background-position: center;
+        height: 1100px;
+    }
+
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 850px;
+        width: 550px;
+    }
+
+    #layout .aboutsection a,
+    #layout .pricingsection a,
+    #layout .portfoliosection a {
+        height: 450px;
+}
+
+    
+}
+
+@media screen and (max-width: 1400px) {
+
+    #welcome {
+        padding-bottom: 15%;
+    }
+
+    #welcome .contactbutton {
+        margin-top: -1%;
+    }
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 850px;
+        width: 500px;
+    }
+
+    #layout .aboutsection a,
+    #layout .pricingsection a,
+    #layout .portfoliosection a {
+        height: 450px;
+}
+
+}
+
+@media screen and (max-width: 1300px) {
+
+#layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 500px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 850px;
+        width: 450px;
+    }
+
+    #layout .aboutsection a,
+    #layout .pricingsection a,
+    #layout .portfoliosection a {
+        height: 450px;
+
+}
+
+    
+
+@media screen and (max-width: 1200px) {
+
+    #welcome .welcometext {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+    }
+
+    #welcome {
+        padding-bottom: 10%;
+    }
+
+    #layout {
+        column-count: 1;
+        margin: 0 auto;
+        padding: 10%;
+    }
+
+    #layout .portfoliosection {
+        user-select: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 700px;
+        width: 700px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 700px;
+        width: 700px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 900px;
+        width: 700px;
+    }
+
+    #layout .aboutsection a,
+    #layout .pricingsection a,
+    #layout .portfoliosection a {
+        height: 450px;
+    }
+
+    #layout .aboutsection,
+    #layout .pricingsection {
+        margin-bottom: 40%;
+    }
+
+    #layout .portfoliosection {
+        margin-bottom: 65%;
+    }
+
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    #menu .logo {
+        margin-left: 5%;
+    }
+
+    #menu .logo img {
+        width: 100px;
+    }
+
+    #welcome {
+        padding-top: 25%;
+    }
+
+    #welcome .welcometext {
+        font-size: 20px;
+    }
+
+    #welcome .contactbutton {
+        font-size: 6px;
+        height: 30px;
+        width: 150px;
+    }
+
+    #welcome .contactbutton:hover span {
+        font-size: 10px;
+    }
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 600px;
+        width: 600px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 600px;
+        width: 600px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 800px;
+        width: 600px;
+    }
+
+    #layout .portfoliosection {
+        margin-bottom: 85%;
+    }
+
+
+@media screen and (max-width: 600px) {
+
+    #menu #socialmedias {
+        display: none;
+    }
+
+    #menu .links {
+        flex: 5;
+        display: flex;
+        gap: 5%;
+        user-select: none;
+    }
+
+    #menu .links  a{
+        font-size: 14px;
+    }
+
+    body, html {
+        background-size: 180%;
+    }
+
+
+    #welcome {
+        padding-top: 35%;
+    }
+
+    
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 400px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 400px;
+        width: 400px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 600px;
+        width: 400px;
+    }
+
+    #layout .portfoliosection {
+        margin-bottom: 60%;
+    }
+
+    #layout .aboutsection,
+    #layout .pricingsection {
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    body, html {
+        background-size: 210%;
+    }
+
+    #menu .logo img {
+        width: 60px;
+    }
+
+    #welcome .welcometext {
+        font-size: 16px;
+    }
+
+    #welcome {
+        padding-top: 50%;
+    }
+
+    #layout .aboutsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 300px;
+        width: 300px;
+    }
+
+    #layout .pricingsection h1 {
+        background-image: url(img/aboutsection.jpg);
+        height: 300px;
+        width: 300px;
+    }
+
+    #layout .portfoliosection h1 {
+        background-image: url(img/portfoliosection.jpg);
+        background-size: 120%;
+        background-position: center;
+        height: 550px;
+        width: 350px;
+    }
+
+    #layout .portfoliosection {
+        margin-bottom: 60%;
+    }
+
+    #layout .aboutsection,
+    #layout .pricingsection {
+        margin-bottom: -30%;
+    }
+}
+
+}

@@ -56,8 +56,8 @@ body, html {
 }
 
 
-#menu .logo img{
-    width: 150px;
+#menu .logo img {
+    width: 120px;
 }
 
 #menu #socialmedias img {
@@ -119,6 +119,7 @@ footer {
     place-items: center;
     padding: 5% 0 5% 0;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .socialmediasfooter {
@@ -134,4 +135,95 @@ footer {
 
 .socialmediasfooter img:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1300px) {
+    #contacttext {
+        padding-top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #contactform form input,
+    #contactform form textarea {
+        width: 400px;
+    }
+
+    #contacttext p {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    #menu .logo {
+        margin-left: 5%;
+    }
+
+    #menu .logo img {
+        width: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #contacttext {
+        padding-top: 20%;
+    }
+
+    #menu #socialmedias {
+        display: none;
+    }
+
+    #menu .links {
+        flex: 5;
+        display: flex;
+        gap: 5%;
+        user-select: none;
+    }
+
+    #menu .links  a{
+        font-size: 14px;
+    }
+
+    #contactform {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40%;
+    }
+
+    #contactform form input,
+    #contactform form textarea {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #menu .logo img {
+        width: 60px;
+    }
+
+    #contacttext {
+        padding-top: 30%;
+    }
+
+    #contacttext h1 {
+        font-size: 40px;
+    }
+
+    #contacttext p {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    #contactform form input,
+    #contactform form textarea {
+        width: 300px;
+    }
+
+    #contactform {
+        padding-bottom: 50%;
+    }
 }

@@ -1,14 +1,15 @@
+/* Reset básico */
 body, html {
     margin: 0;
     padding: 0;
 }
 
+/* Menu */
 #menu {
     width: 100%;
-    background-color: white;
     height: 150px;
     display: flex;
-    align-items: center;  
+    align-items: center;
     position: fixed;
     z-index: 1;
     background-color: rgb(253, 249, 241);
@@ -16,16 +17,20 @@ body, html {
 }
 
 #menu .logo {
-    flex: 1;                   
+    flex: 1;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 15%;
 }
 
+#menu .logo img {
+    width: 120px;
+}
+
 #menu .links {
-    flex: 1;                    
+    flex: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 5%;
     user-select: none;
 }
@@ -35,10 +40,11 @@ body, html {
     color: black;
     font-size: 20px;
     border-bottom: 2px solid transparent;
-    transition: all 0.5s;
+    transition: border-bottom 0.5s;
 }
 
-#menu .links a:hover {
+#menu .links a:hover,
+#menu .links .portfolio {
     border-bottom: 2px solid black;
 }
 
@@ -47,84 +53,151 @@ body, html {
 }
 
 #menu #socialmedias {
-    user-select: none;
-    flex: 1;                    
+    flex: 1;
     display: flex;
-    justify-content: end; 
-    margin-right: 15%;
+    justify-content: flex-end;
     gap: 5%;
-}
-
-
-#menu .logo img{
-    width: 150px;
+    margin-right: 15%;
+    user-select: none;
 }
 
 #menu #socialmedias img {
     width: 25px;
-    transition: all 0.2s;
+    transition: transform 0.2s;
 }
 
 #menu #socialmedias img:hover {
     transform: scale(1.1);
 }
 
-#contacttext {
+/* Contato */
+#portfoliotext {
     display: flex;
-    flex-direction: column; /* vertical */
+    flex-direction: column;
     text-align: center;
 }
 
-#contacttext h1 {
+#portfoliotext h1 {
     font-size: 50px;
-    text-align: center;
     padding-top: 10%;
 }
 
+/* Main e Galeria */
 main {
     display: flex;
     justify-content: center;
     margin: 1% 10%;
 }
 
-
 .gallery {
-  column-count: 4;      /* quantas colunas */
-  column-gap: 10px;     /* espaço entre colunas */
-  margin: 0 auto;
+    column-count: 4;
+    column-gap: 10px;
+    margin: 0 auto;
 }
 
 .gallery img {
-  width: 100%;
-  margin-bottom: 10px;
-  border-radius: 5px;   /* opcional */
-  display: block;
-  transition: all 0.4;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.4s;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
 }
 
+/* Footer */
 footer {
     background-color: rgb(253, 249, 241);
+    display: grid;
     place-items: center;
-    padding: 5% 0 5% 0;
+    padding: 5% 0;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .socialmediasfooter {
     display: flex;
+    align-items: center;
     gap: 20px;
     user-select: none;
-    align-items: center;
 }
 
 .socialmediasfooter img {
     width: 25px;
+    transition: transform 0.2s;
 }
 
 .socialmediasfooter img:hover {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1300px) {
+    #portfoliotext h1 {
+        font-size: 50px;
+        padding-top: 15%;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    #portfoliotext h1 {
+        font-size: 50px;
+        padding-top: 20%;
+    }
+
+
+    .gallery {
+        column-count: 3;
+    }
+
+    #menu .logo {
+        margin-left: 5%;
+    }
+
+    #menu .logo img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #portfoliotext h1 {
+        font-size: 50px;
+        padding-top: 30%;
+    }
+
+    .gallery {
+        column-count: 2;
+    }
+
+    #menu #socialmedias {
+        display: none;
+    }
+
+    #menu .links {
+        flex: 5;
+        display: flex;
+        gap: 5%;
+        user-select: none;
+    }
+
+    #menu .links  a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #portfoliotext h1 {
+        font-size: 50px;
+        padding-top: 40%;
+    }
+
+    #menu .logo img {
+        width: 60px;
+    }
+}
