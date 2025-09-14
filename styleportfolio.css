@@ -99,9 +99,12 @@ main {
   margin-bottom: 10px;
   border-radius: 5px;   /* opcional */
   display: block;
+  transition: all 0.4;
 }
 
-
+.gallery img:hover {
+    transform: scale(1.1);
+}
 
 footer {
     background-color: rgb(253, 249, 241);
@@ -124,3 +127,4 @@ footer {
 .socialmediasfooter img:hover {
     transform: scale(1.1);
 }
+
