@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;  
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(253, 249, 241);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#menu .logo {
+    flex: 1;                   
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+}
+
+#menu .links {
+    flex: 1;                    
+    display: flex;
+    justify-content: center; 
+    gap: 5%;
+    user-select: none;
+}
+
+#menu .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+#menu .links a:hover {
+    border-bottom: 2px solid black;
+}
+
+#menu .links .about {
+    border-bottom: 2px solid black;
+}
+
+#menu #socialmedias {
+    user-select: none;
+    flex: 1;                    
+    display: flex;
+    justify-content: end; 
+    margin-right: 15%;
+    gap: 5%;
+}
+
+
+#menu .logo img{
+    width: 150px;
+}
+
+#menu #socialmedias img {
+    width: 25px;
+    transition: all 0.2s;
+}
+
+#menu #socialmedias img:hover {
+    transform: scale(1.1);
+}
+
+#abouttext {
+    text-align: center;
+}
+
+#abouttext h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.contactbutton {
+    margin: auto;
+    user-select: none;
+    color: black;
+    background-color: rgb(250, 235, 215);
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactbutton a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.contactbutton .contactbuttontext {
+    font-size: 20px;
+    
+}
+
+.contactbutton .buttontexthover {
+    font-size: 0px;
+    transition: all 0.3s;
+}
+
+.contactbutton:hover .buttontexthover {
+    font-size: 16px;
+}
+
+.aboutcontainer {
+    margin: 0 auto;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.aboutimg img {
+    border-radius: 50%;
+    box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+}
+
+footer {
+    background-color: rgb(253, 249, 241);
+    place-items: center;
+    padding: 5% 0 5% 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.socialmediasfooter {
+    display: flex;
+    gap: 20px;
+    user-select: none;
+    align-items: center;
+}
+
+.socialmediasfooter img {
+    width: 25px;
+}
+
+.socialmediasfooter img:hover {
+    transform: scale(1.1);
+}
+

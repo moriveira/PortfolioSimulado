@@ -1,0 +1,219 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg2.jpg);
+}
+
+#menu {
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;  
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#menu .logo {
+    flex: 1;                   
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+}
+
+#menu .links {
+    flex: 1;                    
+    display: flex;
+    justify-content: center; 
+    gap: 5%;
+    user-select: none;
+}
+
+#menu .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+#menu .links a:hover {
+    border-bottom: 2px solid black;
+}
+
+#menu .links .home {
+    border-bottom: 2px solid black;
+}
+
+#menu #socialmedias {
+    user-select: none;
+    flex: 1;                    
+    display: flex;
+    justify-content: end; 
+    margin-right: 15%;
+    gap: 5%;
+}
+
+
+#menu .logo img{
+    width: 150px;
+}
+
+#menu #socialmedias img {
+    width: 25px;
+    transition: all 0.2s;
+}
+
+#menu #socialmedias img:hover {
+    transform: scale(1.1);
+}
+
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+}
+
+#welcome .welcometext {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+#welcome .contactbutton {
+    user-select: none;
+    font-size: 10px;
+    color: black;
+    background-color: rgb(250, 235, 215);
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#welcome .contactbutton a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#welcome .contactbutton span {
+    font-size: 0px;
+    transition: all 0.3s;
+}
+
+#welcome .contactbutton:hover span{
+    font-size: 16px;
+}
+
+section {
+    background-color: antiquewhite;
+    margin-top: 45vh;
+    padding: 0% 7% 0% 7%;
+}
+
+#layout {
+    margin-right: 10%;
+    display: grid;
+}
+
+#layout .aboutsection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+}
+
+#layout .pricingsection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+}
+
+#layout .portfoliosection {
+    position: absolute;
+    margin-left: 10%; 
+    user-select: none;
+}
+
+#layout .aboutsection h1 {
+    background-image: url(img/aboutsection.jpg);
+    filter: brightness(1);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.2s;
+}
+
+#layout .pricingsection h1 {
+    background-image: url(img/aboutsection.jpg);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.2s;
+}
+
+#layout .portfoliosection h1 {
+    background-image: url(img/portfoliosection.jpg);
+    background-size: 150%;
+    background-position: center;
+    width: 600px;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.2s;
+    
+}
+
+
+
+#layout .aboutsection h1:hover, .pricingsection h1:hover, .portfoliosection h1:hover {
+    filter: brightness(1.3);
+    transform: scale(1.02);
+}
+
+#layout .aboutsection a, .pricingsection a, .portfoliosection a {
+    text-decoration: none;
+    color: white;
+    filter: brightness(1);
+}
+
+footer {
+    place-items: center;
+    padding: 5% 0 5% 0;
+}
+
+.socialmediasfooter {
+    display: flex;
+    gap: 20px;
+    user-select: none;
+    align-items: center;
+}
+
+.socialmediasfooter img {
+    width: 25px;
+    transition: all 0.2s;
+}
+
+.socialmediasfooter img:hover {
+    transform: scale(1.1);
+}
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylecontact.css">
+  <title>Contato - Portfolio Idea</title>
+  <title>Portfolio idea | Kenzo Morikawa</title>
+</head>
+<body>
+
+    <div id="menu">
+
+        <div class="logo">
+            <img src="img/logoidea1.png" alt="">
+        </div>
+        <div class="links">
+            <div class="home">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="about">
+                <a href="about.html">About</a>
+            </div>
+            <div class="portfolio">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            
+            <div class="pricing">
+                <a href="pricing.html">Pricing</a>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        
+        <div id="socialmedias">
+            <div class="socialmedia1">
+                <a href="">
+                    <img src="img/iglogo.png" alt="Instagram do Fotógrafo">
+                </a>
+                
+            </div>
+            <div class="socialmedia2">
+                <a href="">
+                    <img src="img/wplogo.png" alt="Whatsapp do Fotógrafo">
+                </a>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="contacttext">
+        <h1>Entre em Contato</h1>
+        <p>
+            Conte-nos sobre o seu casamento usando o formulário abaixo.
+            <br>
+            Adoraríamos saber o que você planejou até agora, quanto mais informações, melhor.
+        </p>
+    </div>
+
+    
+    <div id="contactform">
+        <form id="contact-form">
+            <p>Seu Nome*</p>
+            <input type="text" name="user_name" required>
+            <p>Seu Email*</p>
+            <input type="email" name="user_email" required>
+            <p>Sua Mensagem</p>
+            <textarea name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+            <div class="contacttext">
+                <p>
+                    ©2025 NomeDoFotografo   |   Tel:  (+55) 1234 - 56789   |   Email:  Fotografoemail@gmail.com
+                </p>
+            </div>
+
+            <div class="socialmediasfooter">
+                <a href="">
+                    <img src="img/iglogo.png" alt="Instagram do Fotógrafo">
+                </a>
+                <a href="">
+                    <img src="img/emaillogo.png" alt="Email do Fotógrafo">
+                </a>
+                <a href="">
+                    <img src="img/wplogo.png" alt="Whatsapp do Fotógrado">
+                </a>
+            </div>
+    </footer>
+
+  
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("xz2WI0lAVaV6PxWCK");
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_u6hx64e', 'template_0wyw5rt', this)
+        .then(
+          () => { alert('Mensagem enviada com sucesso!'); this.reset(); },
+          () => { alert('Erro ao enviar mensagem'); }
+        );
+    });
+  </script>
+</body>
+</html>

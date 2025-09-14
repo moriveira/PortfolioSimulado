@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;  
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(253, 249, 241);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#menu .logo {
+    flex: 1;                   
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+}
+
+#menu .links {
+    flex: 1;                    
+    display: flex;
+    justify-content: center; 
+    gap: 5%;
+    user-select: none;
+}
+
+#menu .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+#menu .links a:hover {
+    border-bottom: 2px solid black;
+}
+
+#menu .links .portfolio {
+    border-bottom: 2px solid black;
+}
+
+#menu #socialmedias {
+    user-select: none;
+    flex: 1;                    
+    display: flex;
+    justify-content: end; 
+    margin-right: 15%;
+    gap: 5%;
+}
+
+
+#menu .logo img{
+    width: 150px;
+}
+
+#menu #socialmedias img {
+    width: 25px;
+    transition: all 0.2s;
+}
+
+#menu #socialmedias img:hover {
+    transform: scale(1.1);
+}
+
+#contacttext {
+    display: flex;
+    flex-direction: column; /* vertical */
+    text-align: center;
+}
+
+#contacttext h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 1% 10%;
+}
+
+
+.gallery {
+  column-count: 4;      /* quantas colunas */
+  column-gap: 10px;     /* espaço entre colunas */
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;   /* opcional */
+  display: block;
+}
+
+
+
+footer {
+    background-color: rgb(253, 249, 241);
+    place-items: center;
+    padding: 5% 0 5% 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.socialmediasfooter {
+    display: flex;
+    gap: 20px;
+    user-select: none;
+    align-items: center;
+}
+
+.socialmediasfooter img {
+    width: 25px;
+}
+
+.socialmediasfooter img:hover {
+    transform: scale(1.1);
+}
