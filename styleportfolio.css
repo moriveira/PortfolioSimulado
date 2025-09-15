@@ -167,7 +167,7 @@ footer {
 
     #portfoliotext h1 {
         font-size: 50px;
-        padding-top: 30%;
+        padding-top: 40%;
     }
 
     .gallery {
@@ -196,6 +196,15 @@ footer {
     #menu .logo img {
         width: 60px;
     }
+    footer {
+        margin-top: 20%;
+        font-size: 12px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 3% 10%;
+    }   
 }
 
 @media screen and (max-width: 400px) {

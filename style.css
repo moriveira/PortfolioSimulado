@@ -578,6 +578,10 @@ footer {
     #layout .pricingsection {
         margin-bottom: -30%;
     }
+    footer {
+        margin-top: 20%;
+        font-size: 12px;
+    }
 }
 
 }

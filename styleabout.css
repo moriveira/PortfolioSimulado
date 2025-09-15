@@ -194,6 +194,14 @@ footer {
         width: 400px;
     }
 
+    #abouttext h1 {
+        font-size: 40px;
+    }
+
+    #abouttext p {
+        font-size: 14px;
+    }
+
     #menu #socialmedias {
         display: none;
     }
@@ -216,6 +224,16 @@ footer {
     #menu .logo img {
         width: 60px;
     }
+
+    #abouttext .contactbutton {
+        transform: scale(0.6);
+    }
+
+    footer {
+        margin-top: 20%;
+        font-size: 12px;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
