@@ -198,6 +198,14 @@ footer {
     #contactform form textarea {
         width: 350px;
     }
+    #welcome .contactbutton {
+        font-size: 5.5px;
+        height: 30px;
+        width: 150px;
+    }
+    #menu .logo img {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width: 400px) {
