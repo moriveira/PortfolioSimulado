@@ -238,19 +238,16 @@ footer {
     }
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
         height: 500px;
         width: 500px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
         height: 500px;
         width: 500px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 150%;
         background-position: center;
         height: 1100px;
@@ -262,19 +259,18 @@ footer {
 @media screen and (max-width: 1500px) {
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 500px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 500px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 850px;
@@ -301,19 +297,17 @@ footer {
     }
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 500px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
         height: 400px;
         width: 500px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 850px;
@@ -331,19 +325,18 @@ footer {
 @media screen and (max-width: 1300px) {
 
 #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 500px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 500px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 850px;
@@ -386,19 +379,18 @@ footer {
     }
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 700px;
         width: 700px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 700px;
         width: 700px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 900px;
@@ -453,19 +445,18 @@ footer {
     }
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 600px;
         width: 600px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 600px;
         width: 600px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 800px;
@@ -506,19 +497,18 @@ footer {
     
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 400px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 400px;
         width: 400px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 600px;
@@ -554,19 +544,18 @@ footer {
     }
 
     #layout .aboutsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 300px;
         width: 300px;
     }
 
     #layout .pricingsection h1 {
-        background-image: url(img/aboutsection.jpg);
+    
         height: 300px;
         width: 300px;
     }
 
     #layout .portfoliosection h1 {
-        background-image: url(img/portfoliosection.jpg);
         background-size: 120%;
         background-position: center;
         height: 550px;
